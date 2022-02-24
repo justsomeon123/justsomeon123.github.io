@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+
+  button{
+    font-family: sans-serif,'https://fonts.googleapis.com/css?family=Work+Sans';
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(0, 221, 173), 0 -10px 20px #06a8cc, 0 -18px 40px rgb(7, 40, 170);
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 2.5px;
+    }
+    
+    button:hover{
+    cursor: pointer;
+    border-color: darkcyan;
+    transition-duration: 0.50s;
+    border-style:ridge;
+    border-radius: 5px;
+    text-shadow: 0 -2px 8px #FFF, 0 -4px 20px rgb(0, 221, 173), 0 -20px 40px #06a8cc, 0 -36px 80px rgb(7, 40, 170);
+    }
+  
