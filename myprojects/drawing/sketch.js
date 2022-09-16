@@ -22,7 +22,7 @@ s saves your canvas as a png
 
 based on : https://medium.com/@kellylougheed/rainbow-paintbrush-in-p5-js-e452d5540b25
 
-first version made in 1 day
+first version made in 1 day (more like 3 hrs but same thing)
 
 link to the  older version with rainbow mode and some other removed features
 
@@ -54,10 +54,10 @@ function setup() {
   let h = hour();
   let M = minute();
   let s = second();
-  colorPicker = createColorPicker('#DC4056');
+  colorPicker = createColorPicker('#DC4056'); //wow p5js color
   colorPicker.position(29, 0);
-  text('Everything is loaded Thank you for using this web app', 100, 12);
-  text('The date is ' + m + "/" + d + "/" + y + "  TIME OF LOADING: " + h + ":" + M + ":" + s, 420, 12);
+  text('Finished loading.', 100, 12);
+  text('The date is ' + m + "/" + d + "/" + y + "  Site opened on: " + h + ":" + M + ":" + s, 420, 12);
 
   text(diameter, 12, 12)
 }
@@ -65,15 +65,7 @@ function draw() {
 
   setcolor(colorPicker.color());
 
-  if (keyIsDown(107) || keyIsDown(187)) {
-    diameter += 1;
 
-  }
-
-  if (keyIsDown(109) || keyIsDown(189)) {
-    diameter -= 1;
-
-  }
 
 
   if (diameter < 1) {
@@ -149,6 +141,15 @@ function keyPressed() {
   }
   if (keyCode == 83) {
     saveCanvas()
-    text('You took a pic of your drawing.', 260, 12);
+    text('You took a screenshot of your drawing.', 260, 12);
+  }
+      if (keyCode==107 || keyCode==187) {
+    diameter += 1;
+
+  }
+
+  if (keyCode==109 || keyCode==189) {
+    diameter -= 1;
+
   }
 }
