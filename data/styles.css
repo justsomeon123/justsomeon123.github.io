@@ -5,13 +5,13 @@
 }
 
 button{
-font-family: sans-serif,'https://fonts.googleapis.com/css?family=Work+Sans';
-color: #FFFFFF;
-background: #333333;
-text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(0, 221, 173), 0 -10px 20px #06a8cc, 0 -18px 40px rgb(7, 40, 170);
-color: #FFFFFF;
-background: #333333;
-border-radius: 2.5px;
+  font-family: sans-serif,'https://fonts.googleapis.com/css?family=Work+Sans';
+  color: #FFFFFF;
+  background: #333333;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(0, 221, 173), 0 -10px 20px #06a8cc, 0 -18px 40px rgb(7, 40, 170);
+  color: #FFFFFF;
+  background: #333333;
+  border-radius: 2.5px;
 }
 
 button:hover{
@@ -36,10 +36,4 @@ font-weight: 200;
 .header:hover{
   text-shadow: darkcyan 40px -20px,cyan 42px -22px;
   transition-duration: 0.50s;
-}
-
-
-.smoltext{
-  font-size: 9px;
-  color: white;
 }
