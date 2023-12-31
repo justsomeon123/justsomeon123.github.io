@@ -1,7 +1,19 @@
-.darkmode{
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-weight: 200;
+.cont{
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  color:rgb(54, 145, 125)
+}
+
+.img{
+  background-image: url("./daniel-olah-6KQETG8J-zI-unsplash.jpg");
+  background-position:top;
+  background-size: cover;
+  background-repeat: no-repeat; 
 }
 
 button{
@@ -15,25 +27,18 @@ button{
 }
 
 button:hover{
-cursor: pointer;
-border-color: darkcyan;
-transition-duration: 0.50s;
-border-style:ridge;
-border-radius: 5px;
-text-shadow: 0 -2px 8px #FFF, 0 -4px 20px rgb(0, 221, 173), 0 -20px 40px #06a8cc, 0 -36px 80px rgb(7, 40, 170);
-}
-
-p{
-font-family: sans-serif,'https://fonts.googleapis.com/css?family=Work+Sans';
-font-weight: 200;
-}
-
-.header{
-  font-family: sans-serif,'https://fonts.googleapis.com/css?family=Work+Sans';
-  font-weight: 200;
-}
-
-.header:hover{
-  text-shadow: darkcyan 40px -20px,cyan 42px -22px;
+  cursor: pointer;
+  border-color: darkcyan;
   transition-duration: 0.50s;
+  border-style:ridge;
+  border-radius: 5px;
+  text-shadow: 0 -2px 8px #FFF, 0 -4px 20px rgb(0, 221, 173), 0 -20px 40px #06a8cc, 0 -36px 80px rgb(7, 40, 170);
+}
+
+p, h1, h2, .text{
+  font-family: 'Cascadia Code', sans-serif;
+  font-weight: 200;
+  border-image: url(https://st4.depositphotos.com/1832477/37882/v/450/depositphotos_378826968-stock-illustration-yellow-highlighter-scribble-in-rectangle.jpg);
+  max-width: fit-content;
+  backdrop-filter: blur(1px) contrast(90%);
 }
